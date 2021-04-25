@@ -1,4 +1,4 @@
-##Especificaciones
+## Especificaciones
 El festival QuevedoFest desea diseñar una base de datos para el area de produccion
 
 - En cada area de produccion consta de un unico equipo tecnico.
