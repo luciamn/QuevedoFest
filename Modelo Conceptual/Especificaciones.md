@@ -9,7 +9,7 @@ El festival QuevedoFest desea diseñar una base de datos para el area de producc
 
 - Los espacios pueden ser de dos tipos , puede ser un camerino o un escenario
 
-- De los espacios almacenaremos la localizacion, las dimensiones.
+- De los espacios almacenaremos la localizacion, las dimensiones y el tipo.
 
 - Si el espacio es un escenario, se almacenaria tambien el id del escenario y el modelo de este.
 
@@ -19,11 +19,11 @@ El festival QuevedoFest desea diseñar una base de datos para el area de producc
 
 - En un camerino descansara un único artista y un artista descansara en un único camerino
 
-- Del artista queremos almacenar du DNI, su nombre y su genero musical
+- Del artista queremos almacenar du DNI, su nombre, su genero musical y su ID
 
 - El equipo técnico getiona uno o varios materiales y estos materiales son gestionados por un único equipo
   
-- De los materiales queremos almacenar el departamento que lo gestiona, su categoria y el precio
+- De los materiales queremos almacenar el departamento que lo gestiona, su categoria, el precio y su ID
 
 - El área contratara a una empresas de catering, y esta empresa sera contrada por un unico festival
 
