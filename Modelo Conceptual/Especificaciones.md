@@ -4,7 +4,7 @@ El festival QuevedoFest desea diseñar una base de datos para el area de producc
 - En cada area de produccion consta de un unico equipo tecnico.
   
 - Cada equipo tecnico se desea almacenar el nombre del equipo y los departamentos que tiene.
-    z
+    
 - El equipo tecnico puede montar uno o varios espacios y un espacio es un montado por un único equipo
 
 - Los espacios pueden ser de dos tipos , puede ser un camerino o un escenario
