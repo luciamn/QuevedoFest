@@ -1,4 +1,4 @@
-#INTRODUCCION
+# INTRODUCCION
 Mi base de datos va sobre el area de produccion, en la que gestionaremos:
 - Catering
     - Empleados
