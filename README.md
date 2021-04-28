@@ -1,8 +1,8 @@
 # QuevedoFest
 
 - [x] 1. Introducción  [Introduccion](Introduccion/Introduccion.md) 
-- [x] 2. Modelo Conceptual
-   - [x] 2.1. Especificaciones [Especificaciones] (Modelo Conceptual/Especificaciones.md)
+- [x] 2. Modelo Conceptual  [Especificaciones](Modelo Conceptual/Especificaciones.md) 
+   - [x] 2.1. Especificaciones 
    - [x] 2.2. Diagrama Entidad-Relación
 - [ ] 3. Modelo Lógico 
    - [ ] 3.1. Modelo Relacional
