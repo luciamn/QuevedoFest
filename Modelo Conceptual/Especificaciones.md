@@ -25,9 +25,15 @@ El festival QuevedoFest desea diseñar una base de datos para el area de producc
   
 - De los materiales queremos almacenar el departamento que lo gestiona, su categoria, el precio y su ID.
 
-- El área contratara a una empresas de catering, y esta empresa sera contrada por un unico festival.
-
 - De las empresas de catering almacenaremos el id, el nombre, la dirección y el telefono.
+
+- Uncatering tiene uno o varios menus y un menu pertenece a un catering
+
+- Del menu almacenaremos su ID y el nombre
+
+- Un menu está compuesto por uno o varios platos y un plato puede estar en uno o en varios menus.
+
+- De un plato almacenaremos su ID, el nombre, y el tipo 
 
 - En el catering trabajaran uno o varios empleados, y un empleado trabajara en un único catering.
 
