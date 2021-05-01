@@ -4,8 +4,8 @@
 - [x] 2. Modelo Conceptual 
    - [x] 2.1. Especificaciones [Especificaciones](Modelo Conceptual/Especificaciones.md)  
    - [x] 2.2. Diagrama Entidad-Relación
-- [ ] 3. Modelo Lógico 
-   - [ ] 3.1. Modelo Relacional
+- [x] 3. Modelo Lógico 
+   - [x] 3.1. Modelo Relacional [Relacional](Modelo-Logico/ Modelo-Relacional.md)
    - [ ] 3.2. Normalización/Desnormalización
 - [ ] 4. Modelo Físico
    - [ ] 4.1. Diagrama de base de datos (notación "Crow's feet" o IDEF1X)
