@@ -11,18 +11,18 @@
 ### Tabla Menu
     Nombre --- Alfanumerico de 40 caracteres
     Tipo --- Alfanumerico de 40 caracteres
-    ID --- Alfanumerico de 5 caracteres
+    ID --- Numerico de 5 caracteres
 
 ### Tabla Platos
     Nombre --- Alfanumerico de 40 caracteres
     Tipo --- Alfanumerico de 40 caracteres
-    ID --- Alfanumerico de 5 caracteres
+    ID --- Numerico de 5 caracteres
 
 ### Empleados
     DNI --- Alfanumerico de 9 caracteres
     Puesto --- Alfanumnerico de 20 caracteres
     Nombre --- Alfanumerico de 50 caracteres
-    ID --- Alfanumerico de 5 caracteres
+    ID --- Numerico de 5 caracteres
     Fecha_nac --- Tipo fecha
     Fecha_ing --- tipo fecha
     Salario --- Numerico de 5 posiciones
@@ -37,31 +37,31 @@
     Telefono --- Alfanumerico de 9 caracteres
     DNI -- Alfanumerico de 9 caracteres
     Departemento --- Alfanuemrico de 20 caracteres
-    ID --- Alfanumerico de 5 caracteres
+    ID --- Numerico de 5 caracteres
 
 ###  Materiales
     Categoria --- Alfanumerico de 40 caracteres
     Precio --- Numerico de 10 posiciones
-    ID --- Alfanumerico de 5 caracteres
+    ID --- Numerico de 5 caracteres
 
 ### Espacios
-    ID --- Alfanumerico de 10 caracteres
+    ID --- Numerico de 10 caracteres
     Dimensiones --- Numerico de 40 posiciones
     Tipo --- Alfanumerico de 30 caracteres
     Localizacion --- Alfanumerico de 50 caracteres
 
 ### Camerinos
-    ID --- Alfanumerico de 5 caracteres
+    ID --- Numerico de 5 caracteres
     Inmobilario --- Alfanumerico de 30 caracteres
     Capacidad --- Alfanumerico de 20 caracteres
 
 ### Escenarios
-    ID --- Alfannumerico de 5 caracteres
+    ID --- Numerico de 5 caracteres
     Modelo --- Alfanumerico de 30 caracteres
     Superfifcie --- Alfanuemrico de 20 caracteres
 
 ### Artista
-    ID --- Alfanumerico de 20 caracteres
+    ID --- Numerico de 20 caracteres
     Nombre --- Alfanumerico de 40 caracteres
     DNI --- Alfanumerico de 9 caracteres
     genero_musical --- Alfanumerico de 30 caracteres
