@@ -2,13 +2,13 @@
 
 - [x] 1. Introducción  [Introduccion](Introduccion/Introduccion.md) 
 - [x] 2. Modelo Conceptual 
-   - [x] 2.1. Especificaciones [Especificaciones](ModeloConceptual/Especificaciones.md)
-   - [x] 2.2. Diagrama Entidad-Relación 
+   - [x] 2.1. Especificaciones [Especificaciones](Modelo-Conceptual/Especificaciones.md)
+   - [x] 2.2. Diagrama Entidad-Relación [Modelo E/R](Modelo-Conceptual/ModeloConceptual.drawio.crswap.png)
 - [x] 3. Modelo Lógico 
-   - [x] 3.1. Modelo Relacional [Relacional](Modelo-Logico/ Modelo-Relacional.md)
+   - [x] 3.1. Modelo Relacional [Relacional](Modelo-Logico/Modelo-Relacional.md)
    - [ ] 3.2. Normalización/Desnormalización
 - [x] 4. Modelo Físico
-   - [x] 4.1. Diagrama de base de datos (notación "Crow's feet" o IDEF1X)
+   - [x] 4.1. Diagrama de base de datos (notación "Crow's feet" o IDEF1X) [Diagrama BBDD](Modelo-Fisico/DiagramaBBDD.md)
    - [ ] 4.2. Creación de tablas y otros objetos
    - [ ] 4.3. Carga de datos de prueba
 - [ ] 5. Consultas de la base de datos
