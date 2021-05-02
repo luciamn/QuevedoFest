@@ -17,11 +17,13 @@ Materiales(ID(PK), precio, categoria, nombre_equipoTecnico(FK))
 
 Espacios(ID(PK) ,Dimensiones, tipo, Localizacion, nombre_equipoTecnico(FK))
 
-Camerinos (ID(PK), nombre_artista, ID_espacio(FK))
+Camerinos (ID(PK), Inmboliario, Capacidad, ID_espacio(FK))
 
 Artista(ID(PK), DNI, nombre, genero_musical ID_camerino(FK))
 
-Escenarios(ID(PK), modelo, nombre_equipoTecnico(FK))
+Escenarios(ID(PK), modelo, superficie, ID_espacio(FK))
 
 Tecnicos(Nombre, telefono, DNI, departamento, ID(PK), nombre_equipoTecnico(FK))
+
+Escenarios_Artistas(ID_Escenarios(PK), ID_Artistas(PK))
 
