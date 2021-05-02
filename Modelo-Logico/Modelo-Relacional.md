@@ -23,3 +23,5 @@ Artista(ID(PK), DNI, nombre, genero_musical ID_camerino(FK))
 
 Escenarios(ID(PK), modelo, nombre_equipoTecnico(FK))
 
+Tecnicos(Nombre, telefono, DNI, departamento, ID(PK), nombre_equipoTecnico(FK))
+
