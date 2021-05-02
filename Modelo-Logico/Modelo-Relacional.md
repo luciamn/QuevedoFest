@@ -15,7 +15,7 @@ Equipo_Tecnico(nombre(PK), departamento, ID_catering(FK))
 
 Materiales(ID(PK), precio, categoria, nombre_equipoTecnico(FK))
 
-Espacios(Dimensiones, tipo, Localizacion, nombre_equipoTecnico(FK))
+Espacios(ID(PK) ,Dimensiones, tipo, Localizacion, nombre_equipoTecnico(FK))
 
 Camerinos (ID(PK), nombre_artista, ID_espacio(FK))
 
