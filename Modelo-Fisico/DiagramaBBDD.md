@@ -83,7 +83,7 @@
 
 - Crea la tabla artistas como el ID como la Primary KEY y  añade la columna ID_camerino como Foreign Key referenciado a la columna ID de la tabla Camerino
  
-- Crea la tabla escenarios como el ID como la Primary KEY  y  añade la columna nombre_equipotecnico como Foreign Key referenciado a la columna nombre de la tabla Equipo Tecnico
+- Crea la tabla escenarios como el ID como la Primary KEY  y  añade la columna ID_espacios como la Foreign  Key referenciando a la columna ID de la tabla Espacios
 
 - Crea la tabla Tecnicos como el ID como la Primary KEY y  añade la columna nombre_equipotecnico como Foreign Key referenciado a la columna nombre de la tabla Equipo Tecnico
 
