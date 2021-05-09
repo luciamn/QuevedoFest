@@ -9,8 +9,8 @@ CREATE TABLE Catering(
 	Nombre VARCHAR(40),
 	ID NUMERIC(5),
 	Direccion VARCHAR(40)
-	;
 )
+;
 ```
 
 ## Tabla menu 
@@ -19,8 +19,8 @@ CREATE TABLE Menu(
 	Nombre VARCHAR(40),
 	Tipo VARCHAR(40),
 	ID NUMERIC(5)
-	;
 )
+;
 ```
 
 ## Tabla Platos
@@ -29,8 +29,8 @@ CREATE TABLE Platos(
 	Nombre VARCHAR(40),
 	Tipo VARCHAR(40),
 	ID NUMERIC(5)
-	;
 )
+;
 ```
 
 ## Tabla Empleado
@@ -44,8 +44,8 @@ CREATE TABLE Empleado(
 	Fecha_nac DATE,
 	Salario NUMERIC(5),
 	Telefono VARCHAR(9)
-	;
 )
+;
 ```
 
 ## Tabla Equipo_Tecnico
@@ -53,8 +53,8 @@ CREATE TABLE Empleado(
 CREATE TABLE Equipo_Tecnico(
 	Nombre VARCHAR(20),
 	Telefono VARCHAR(9)
-	;
 )
+;
 ```
 
 ## Tabla Tecnicos
@@ -65,8 +65,8 @@ CREATE TABLE Tecnicos(
 	DNI VARCHAR(9),
 	Departemento VARCHAR(20),
 	ID NUMERIC(5)
-	;
 )
+;
 ```
 
 ## Tabla Materiales
@@ -75,19 +75,19 @@ CREATE TABLE Materiales(
 	Categoria VARCHAR(40),
 	Precio NUMERIC(10),
 	ID NUMERIC(5)
-	;
 )
+;
 ``` 
 
 ## Tabla Espacios
 ```
 CREATE TABLE Espacios(
 	ID NUMERIC(5),
-	Dimensiones NUMERIC***Alfanumerico porque lleva m, recordarlo(40),
+	Dimensiones VARCHAR(40),
 	Tipo VARCHAR(30),
 	Localizacion VARCHAR(50)
-	;
 )
+;
 ```
 
 ## Tabla Camerinos
@@ -96,8 +96,8 @@ CREATE TABLE Camerinos(
 	ID NUMERIC(5),
 	Inmobiliario VARCHAR(30),
 	Capacidad VARCHAR(20)
-	;
 )
+;
 ```
 
 ## Tabla Escenarios
@@ -106,8 +106,8 @@ CREATE TABLE Escenarios(
 	ID NUMERIC(5),
 	Modelo VARCHAR(30),
 	Superficie VARCHAR(20)
-	;
 )
+;
 ```
 
 ## Tabla Artista
@@ -117,8 +117,8 @@ CREATE TABLE Artista(
 	Nombre VARCHAR(40),
 	DNI VARCHAR(9),
 	Genero_musical VARCHAR(30)
-	;
 )
+;
 ```
 
 ## Añadir restricciones
@@ -131,7 +131,7 @@ PRIMARY KEY (ID);
 
 ## Tabla Menu 
 ```
-ALTER TABLE Empleados ADD
+ALTER TABLE Menu ADD
 PRIMARY KEY (ID);
 ```
 ```
@@ -148,7 +148,7 @@ PRIMARY KEY (ID);
 
 ## Tabla Empleado
 ```
-ALTER TABLE Empleados ADD
+ALTER TABLE Empleado ADD
 PRIMARY KEY (ID);
 ```
 ```
@@ -159,8 +159,8 @@ ADD CONSTRAINT empleados_id_catering FOREIGN KEY (ID_catering)
 
 ## Tabla Equipo_Tecnico
 ```
-ALTER TABLE Platos ADD 
-PRIMARY KEY (ID);
+ALTER TABLE equipo_tecnico ADD 
+PRIMARY KEY (nombre);
 ```
 ```
 ALTER TABLE Equipo_Tecnico
@@ -170,7 +170,7 @@ ADD CONSTRAINT equipoTecnico_id_catering FOREIGN KEY (ID_catering)
 
 ## Tabla Tecnicos
 ```
-ALTERT TABLE Tecnicos ADD
+ALTER TABLE Tecnicos ADD
 PRIMARY KEY (ID);
 ```
 ```
@@ -231,8 +231,8 @@ ALTER TABLE Artista ADD
 PRIMARY KEY (ID);
 ```
 ```
-ALTERT TABLE Artista
+ALTER TABLE Artista
 ADD CONSTRAINT artistas_idCamerino FOREIGN KEY (ID_Camerino)
-	REFERENCES Camerino (ID);
+	REFERENCES Camerinos (ID);
 
 ```
