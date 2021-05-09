@@ -9,7 +9,7 @@
    - [ ] 3.2. Normalización/Desnormalización
 - [x] 4. Modelo Físico
    - [x] 4.1. Diagrama de base de datos (notación "Crow's feet" o IDEF1X) [Diagrama BBDD](Modelo-Fisico/DiagramaBBDD.md)
-   - [ ] 4.2. Creación de tablas y otros objetos
+   - [x] 4.2. Creación de tablas y otros objetos [Creacion de tablas](Modelo-Fisico/Creacion-de-tablas)
    - [ ] 4.3. Carga de datos de prueba
 - [ ] 5. Consultas de la base de datos
    - [ ] 5.1. Consultas más frecuentes
