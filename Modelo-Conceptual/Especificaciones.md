@@ -1,42 +1,38 @@
 ## Especificaciones
 El festival QuevedoFest desea diseñar una base de datos para el area de produccion
 
-- En cada area de produccion consta de un unico equipo tecnico.
-  
-- Cada equipo tecnico se desea almacenar el nombre del equipo y los departamentos que tiene.
-    
-- El equipo tecnico puede montar uno o varios espacios y un espacio es un montado por un único equipo.
+- El catering tiene uno o varios menus y el menu le pertenece a una empresa de catering
 
-- Los espacios pueden ser de dos tipos , puede ser un camerino o un escenario.
+- Del catering alamcenaremos su nombre, el ID, la direccion, y el telefono
 
-- De los espacios almacenaremos la localizacion, las dimensiones y el tipo.
+- Del menu almaceanremos su ID, el tipo del menu y su nombre
 
-- Si el espacio es un escenario, se almacenaria tambien el id del escenario y el modelo de este.
+- El menu esta compuesto de uno  ovarios platos y un plato pertenece a uno a varios menus
 
-- Si el espacio es un camerino, se alamcenaria tambien el id del camerino, y el nombre del artista.
+- Del plato almacenaremos el ID, el tipo del plato y su nombre
 
-- En un escenario pueden actuar uno o varios artistas y un artista actuara en uno o varios escenarios.
+- Un catering da servicio a uno o a varios equipos tecnicos y un equipo es servido por un catering
 
-- En un camerino descansara un único artista y un artista descansara en un único camerino.
+- Del Equipo Tecnico almacenaremos el nombre y su telefono
 
-- Del artista queremos almacenar du DNI, su nombre, su genero musical y su ID.
+- Un equipo tecnico esta formado por uno o vario stecnicos y un tecnico forma parte de un unico equipo tecnico
 
-- El equipo técnico getiona uno o varios materiales y estos materiales son gestionados por un único equipo.
-  
-- De los materiales queremos almacenar el departamento que lo gestiona, su categoria, el precio y su ID.
+- De los tecnicos almacenaremos el nombre, su ID, el departamento, el DNI y el telefono
 
-- De las empresas de catering almacenaremos el id, el nombre, la dirección y el telefono.
+- Un Equipo Tecnico monta uno o varios espacios y un espacio es montado por un unico quipo tecnico
 
-- Uncatering tiene uno o varios menus y un menu pertenece a un catering
+- De los espacios almacenaremos el ID, las dimensiones, el tipo y su localizacion
 
-- Del menu almacenaremos su ID y el nombre
+- Los espacios pueden ser o un camerino o un escenario
 
-- Un menu está compuesto por uno o varios platos y un plato puede estar en uno o en varios menus.
+- De un camerino almacenaremos su ID, el inmobiliario y la capacidad
 
-- De un plato almacenaremos su ID, el nombre, y el tipo 
+- En un camerino descansa un unicio artista y un artista descansara en un unico camerino
 
-- En el catering trabajaran uno o varios empleados, y un empleado trabajara en un único catering.
+- De un artista almacenaremos su ID, el nombre, el DNI y su genero musical
 
-- De un empleado almacenremos su id, DNI, nombre, el puesto, su fecha de nacimiento, la fecha de ingreso a la empresa, el telefono y por último su salario.
+- Un artista actuara en uno o en varios escenarios y en un escenario asctuaran uno o varios artistas
+
+- De un escenario almacenaremos la superficie, el ID y el modelo
 
  
