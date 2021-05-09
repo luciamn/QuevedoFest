@@ -18,7 +18,8 @@ CREATE TABLE Catering(
 CREATE TABLE Menu(
 	Nombre VARCHAR(40),
 	Tipo VARCHAR(40),
-	ID NUMERIC(5)
+	ID NUMERIC(5),
+	ID_catering INTEGER NOT NULL
 )
 ;
 ```
@@ -43,7 +44,8 @@ CREATE TABLE Empleado(
 	Fecha_Ing DATE,
 	Fecha_nac DATE,
 	Salario NUMERIC(5),
-	Telefono VARCHAR(9)
+	Telefono VARCHAR(9),
+	ID_catering INTEGER NOT NULL
 )
 ;
 ```
@@ -52,19 +54,21 @@ CREATE TABLE Empleado(
 ```
 CREATE TABLE Equipo_Tecnico(
 	Nombre VARCHAR(20),
-	Telefono VARCHAR(9)
+	Telefono VARCHAR(9),
+	ID_catering INTEGER NOT NULL
 )
 ;
 ```
 
-## Tabla Tecnicos
+## Tabla Tecnico
 ```
-CREATE TABLE Tecnicos(
+CREATE TABLE Tecnico(
 	Nombre VARCHAR(20),
 	Telefono VARCHAR(9),
 	DNI VARCHAR(9),
 	Departemento VARCHAR(20),
-	ID NUMERIC(5)
+	ID NUMERIC(5),
+	nombre_equipotecnico VARCHAR(30)
 )
 ;
 ```
@@ -74,38 +78,42 @@ CREATE TABLE Tecnicos(
 CREATE TABLE Materiales(
 	Categoria VARCHAR(40),
 	Precio NUMERIC(10),
-	ID NUMERIC(5)
+	ID NUMERIC(5),
+	nombre_equipotecnico VARCHAR(30)
 )
 ;
 ``` 
 
 ## Tabla Espacios
 ```
-CREATE TABLE Espacios(
+CREATE TABLE Espacio(
 	ID NUMERIC(5),
 	Dimensiones VARCHAR(40),
 	Tipo VARCHAR(30),
-	Localizacion VARCHAR(50)
+	Localizacion VARCHAR(50),
+	nombre_equipotecnico VARCHAR(30)
 )
 ;
 ```
 
 ## Tabla Camerinos
 ```
-CREATE TABLE Camerinos(	
+CREATE TABLE Camerino(	
 	ID NUMERIC(5),
 	Inmobiliario VARCHAR(30),
-	Capacidad VARCHAR(20)
+	Capacidad VARCHAR(20),
+	ID_espacio INTEGER NOT NULL
 )
 ;
 ```
 
 ## Tabla Escenarios
 ```
-CREATE TABLE Escenarios(
+CREATE TABLE Escenario(
 	ID NUMERIC(5),
 	Modelo VARCHAR(30),
-	Superficie VARCHAR(20)
+	Superficie VARCHAR(20),
+	ID_espacio INTEGER NOT NULL
 )
 ;
 ```
@@ -116,7 +124,8 @@ CREATE TABLE Artista(
 	ID NUMERIC(20),
 	Nombre VARCHAR(40),
 	DNI VARCHAR(9),
-	Genero_musical VARCHAR(30)
+	Genero_musical VARCHAR(30),
+	ID_camerino INTEGER NOT NULL
 )
 ;
 ```
@@ -135,8 +144,8 @@ ALTER TABLE Menu ADD
 PRIMARY KEY (ID);
 ```
 ```
-ALTER TABLE Empleados
-ADD CONSTRAINT empleados_id_catering FOREIGN KEY (ID_catering) 
+ALTER TABLE Menu
+ADD CONSTRAINT menu_id_catering FOREIGN KEY (ID_catering) 
     REFERENCES Catering (ID);
 ```
 
@@ -152,7 +161,7 @@ ALTER TABLE Empleado ADD
 PRIMARY KEY (ID);
 ```
 ```
-ALTER TABLE Empleados
+ALTER TABLE Empleado
 ADD CONSTRAINT empleados_id_catering FOREIGN KEY (ID_catering) 
     REFERENCES Catering (ID);
 ```
@@ -170,12 +179,12 @@ ADD CONSTRAINT equipoTecnico_id_catering FOREIGN KEY (ID_catering)
 
 ## Tabla Tecnicos
 ```
-ALTER TABLE Tecnicos ADD
+ALTER TABLE Tecnico ADD
 PRIMARY KEY (ID);
 ```
 ```
-ALTER TABLE Tecnicos 
-ADD CONSTRAINTS tecnicos_nombreEquipoTecnico FOREIGN KEY (nombre_equipotecnico)
+ALTER TABLE Tecnico 
+ADD CONSTRAINT tecnico_nombreEquipotecnico FOREIGN KEY (nombre_equipotecnico)
 	REFERENCES Equipo_Tecnico (nombre);
 ```
 
@@ -186,42 +195,42 @@ PRIMARY KEY (ID);
 ```
 ```
 ALTER TABLE Materiales 
-ADD CONSTRAINT materiales_nombre_equipoTecnico FOREIGN KEY (nombre_equipoTecnico)
+ADD CONSTRAINT materiales_nombre_equipoTecnico FOREIGN KEY (nombre_equipotecnico)
 	REFERENCES Equipo_Tecnico (nombre);
 ```
 
 ## Tabla Espacios
 ```
-ALTER TABLE Espacios ADD
+ALTER TABLE Espacio ADD
 PRIMARY KEY (ID);
 ```
 ```
-ALTER TABLE Espacios
-ADD CONSTRAINT espacios_nombre_equipoTecnico FOREIGN KEY (nombre_equipoTecnico)
+ALTER TABLE Espacio
+ADD CONSTRAINT espacios_nombre_equipoTecnico FOREIGN KEY (nombre_equipotecnico)
 	REFERENCES Equipo_Tecnico (nombre);
 ```
 
 ## Tabla Camerinos
 ```
-ALTER TABLE Camerinos ADD
+ALTER TABLE Camerino ADD
 PRIMARY KEY (ID);
 ```
 ```
-ALTER TABLE Camerinos 
-ADD CONSTRAINTS camerinos_IDespacios FOREIGN KEY (ID_espacios)
-	REFERENCES Espacios (ID);
+ALTER TABLE Camerino 
+ADD CONSTRAINT camerinos_IDespacios FOREIGN KEY (ID_espacio)
+	REFERENCES Espacio (ID);
 ```
 
 ## Tabla Escenarios
 ```
-ALTER TABLE Escenarios ADD
+ALTER TABLE Escenario ADD
 PRIMARY KEY (ID);
 ```
 
 ```
-ALTER TABLE Escenarios 
-ADD CONSTRAINTS escenarios_IDespacios FOREIGN KEY (ID_espacios)
-	REFERENCES Espacios (ID);
+ALTER TABLE Escenario 
+ADD CONSTRAINT escenarios_IDespacios FOREIGN KEY (ID_espacio)
+	REFERENCES Espacio (ID);
 
 ```
 
@@ -232,7 +241,7 @@ PRIMARY KEY (ID);
 ```
 ```
 ALTER TABLE Artista
-ADD CONSTRAINT artistas_idCamerino FOREIGN KEY (ID_Camerino)
-	REFERENCES Camerinos (ID);
+ADD CONSTRAINT artistas_idCamerino FOREIGN KEY (ID_camerino)
+	REFERENCES Camerino (ID);
 
 ```
