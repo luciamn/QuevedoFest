@@ -41,8 +41,8 @@ CREATE TABLE Empleado(
 	Puesto VARCHAR(20),
 	Nombre VARCHAR(50),
 	ID NUMERIC(5),
-	Fecha_Ing DATE,
 	Fecha_nac DATE,
+	Fecha_Ing DATE,
 	Salario NUMERIC(5),
 	Telefono VARCHAR(9),
 	ID_catering INTEGER NOT NULL
@@ -55,6 +55,7 @@ CREATE TABLE Empleado(
 CREATE TABLE Equipo_Tecnico(
 	Nombre VARCHAR(20),
 	Telefono VARCHAR(9),
+	ID NNUMERIC(5),
 	ID_catering INTEGER NOT NULL
 )
 ;
@@ -63,7 +64,7 @@ CREATE TABLE Equipo_Tecnico(
 ## Tabla Tecnico
 ```
 CREATE TABLE Tecnico(
-	Nombre VARCHAR(20),
+	Nombre VARCHAR(50),
 	Telefono VARCHAR(9),
 	DNI VARCHAR(9),
 	Departemento VARCHAR(20),
