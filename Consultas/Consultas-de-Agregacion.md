@@ -174,8 +174,27 @@ areaproducion2=# SELECT COUNT(*) AS "num. empleado", nombre_equipotecnico AS "Eq
             10 | Los Tecnicos
 (2 rows)
 ```
+## Consulta 10
+Mostrar el numero de `artistas` que cantan cada genero
+```sql
+SELECT COUNT(*) AS "num. de artistas", genero_musical FROM artista GROUP BY genero_musical;
+```
+Resultado:
+```
+areaproducion2=# SELECT COUNT(*) AS "num. de artistas", genero_musical FROM artista GROUP BY genero_musical;
+ num. de artistas | genero_musical
+------------------+----------------
+                2 | Pop
+                1 | Soul
+                1 | Rock
+                1 | Heavy
+                2 | Urbano
+(5 rows)
+```
 
-## Consulta 9
+
+
+## Consulta 10
 Se desea realizar una estadística de las fechas de contratación de los empleados a partir del 1980. Para ello, se desea que se desglose que número de empleados ha empezado a trabajar en que año y en que mes.
 ```sql
 SELECT TO_CHAR(fecha_ing, 'YYYY') AS año,
@@ -219,4 +238,20 @@ COUNT(*) AS "num. empleado" FROM empleado WHERE fecha_ing >= '1980-01-01' GROUP 
  1998 |     |             8
       |     |            25
 (29 rows)
+```
+
+## Consulta 11
+Mostrar el numero de `camerinos` y `escenario` que hay en el festival
+```sql
+SELECT tipo, COUNT(*) FROM espacio GROUP BY tipo;
+```
+Resultado:
+```
+areaproducion2=# SELECT tipo, COUNT(*) FROM espacio GROUP BY tipo;
+   tipo    | count
+-----------+-------
+ Camerino  |     7
+ Escenario |     4
+(2 rows)
+
 ```
