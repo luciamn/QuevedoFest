@@ -16,7 +16,7 @@
    - [x] 5.2. Consultas sencillas[Sencillas](Consultas/Consultas-sencillas)
    - [x] 5.3. Consultas de agregación y resumen[Agregacion](Consultas/Consultas-de-Agregacion)
    - [x] 5.4. Consultas con subconsultas[Subconsultas](Consultas/Subconsultas)
-- [ ] 6. Vistas, secuencias e índices
+- [x] 6. Vistas, secuencias e índices[Vistas-Secuencias-Indices](Vistas/Vsitas-secuencias-indices)
 - [ ] 7. Scripts en PL/pgSQL
 - [ ] 8. Extras
    - [ ] 8.1. Cursores
