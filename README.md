@@ -10,12 +10,12 @@
 - [x] 4. Modelo Físico
    - [x] 4.1. Diagrama de base de datos (notación "Crow's feet" o IDEF1X) [Diagrama BBDD](Modelo-Fisico/DiagramaBBDD.md)
    - [x] 4.2. Creación de tablas y otros objetos [Tablas](Modelo-Fisico/Creacion-de-tablas.md)
-   - [ ] 4.3. Carga de datos de prueba
-- [ ] 5. Consultas de la base de datos
-   - [ ] 5.1. Consultas más frecuentes
-   - [ ] 5.2. Consultas sencillas
-   - [ ] 5.3. Consultas de agregación y resumen
-   - [ ] 5.4. Consultas con subconsultas
+   - [x] 4.3. Carga de datos de prueba [Inserccion](Modelo-Fisico/Inserccion-de-datos) 
+- [x] 5. Consultas de la base de datos
+   - [x] 5.1. Consultas más frecuentes[Frecuentes](Consultas/Consultas-mas-frecuentes)
+   - [x] 5.2. Consultas sencillas[Sencillas](Consultas/Consultas-sencillas)
+   - [x] 5.3. Consultas de agregación y resumen[Agregacion](Consultas/Consultas-de-Agregacion)
+   - [x] 5.4. Consultas con subconsultas[Subconsultas](Consultas/Subconsultas)
 - [ ] 6. Vistas, secuencias e índices
 - [ ] 7. Scripts en PL/pgSQL
 - [ ] 8. Extras
