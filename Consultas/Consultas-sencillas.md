@@ -276,3 +276,18 @@ areaproducion2=# SELECT DISTINCT puesto, salario FROM empleado WHERE puesto = 'L
  Lavaplatos |    1300
 (1 row)
 ```
+
+## Consulta 14
+Mostrar el id y modelo de los escenarios que su modelo sea Cuarta Pared
+```sql
+SELECT id, modelo FROM escenario WHERE modelo = 'Cuarta pared';
+```
+Resultado:
+```
+areaproducion2=# SELECT id, modelo FROM escenario WHERE modelo = 'Cuarta pared';
+  id  |    modelo
+------+--------------
+ 3003 | Cuarta pared
+ 3004 | Cuarta pared
+(2 rows)
+```

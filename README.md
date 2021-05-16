@@ -13,11 +13,11 @@
    - [x] 4.3. Carga de datos de prueba [Inserccion](Modelo-Fisico/Inserccion-de-datos) 
 - [x] 5. Consultas de la base de datos
    - [x] 5.1. Consultas más frecuentes[Frecuentes](Consultas/Consultas-mas-frecuentes)
-   - [x] 5.2. Consultas sencillas[Sencillas](Consultas/Consultas-sencillas)
-   - [x] 5.3. Consultas de agregación y resumen[Agregacion](Consultas/Consultas-de-Agregacion)
+   - [x] 5.2. Consultas sencillas [Sencillas](Consultas/Consultas-sencillas)
+   - [x] 5.3. Consultas de agregación y resumen [Agregacion](Consultas/Consultas-de-Agregacion)
    - [x] 5.4. Consultas con subconsultas[Subconsultas](Consultas/Subconsultas)
 - [x] 6. Vistas, secuencias e índices[Vistas-Secuencias-Indices](Vistas/Vsitas-secuencias-indices)
-- [ ] 7. Scripts en PL/pgSQL
+- [x] 7. Scripts en PL/pgSQL[Scripts](Scripts/scripts)
 - [ ] 8. Extras
    - [ ] 8.1. Cursores
    - [ ] 8.2. Prototipo de interfaz de usuario

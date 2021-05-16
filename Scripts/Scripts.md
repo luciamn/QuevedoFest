@@ -67,3 +67,52 @@ end;
 $$
 ```
 
+## Scrip 5
+Mostrar una excepcion que no mustre un error, le pondremos una ip que no tiene ningum artista asignado, en este caso el 70, ya que los artistas tienen el id desde el numero 4000 y nos tendra que salir la excepcion	
+```sql
+do 
+$$
+declare
+v_registro record;
+v_art_id int := 70;
+begin
+	select id, nombre
+	into strict v_registro
+	from artista
+	where id = v_art_id;
+
+	exception
+	when no_data_found then
+	raise exception 'Empleado % no encontrado', v_art_id;
+	when others then 
+	raise exception 'Error inesperado';
+end;
+$$
+```
+Resultado:
+```
+SQL Error [P0001]: ERROR: Empleado 70 no encontrado
+  Where: PL/pgSQL function inline_code_block line 13 at RAISE
+```
+
+## Script 6
+Realizaremos la misma consulta que el script 5, pero introduciremos la variable found, donde si el id es correcto nos devolvera el artista, pero si nos devolvera un false
+```sql
+do 
+$$
+declare
+v_artista artista%rowtype;
+v_art_id artista.id%type = 4001;
+begin
+	select * from artista
+	into  v_artista
+	where id = v_art_id;
+
+	if not found then 
+		raise notice 'Empleado % no encontrado', v_art_id;
+	else
+		raise notice 'Nombre del artista', v_artista.nombre;
+	end if;
+end;
+$$
+```
