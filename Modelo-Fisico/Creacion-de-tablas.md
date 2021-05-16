@@ -37,7 +37,6 @@ CREATE TABLE Platos(
 ## Tabla Empleado
 ```
 CREATE TABLE Empleado(
-	DNI VARCHAR(5),
 	Puesto VARCHAR(20),
 	Nombre VARCHAR(50),
 	ID NUMERIC(5),
@@ -45,7 +44,8 @@ CREATE TABLE Empleado(
 	Fecha_Ing DATE,
 	Salario NUMERIC(5),
 	Telefono VARCHAR(9),
-	ID_catering INTEGER NOT NULL
+	ID_catering INTEGER NOT NULL,
+	DNI VARCHAR(9)
 )
 ;
 ```

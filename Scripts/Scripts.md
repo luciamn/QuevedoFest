@@ -68,7 +68,7 @@ $$
 ```
 
 ## Scrip 5
-Mostrar una excepcion que no mustre un error, le pondremos una ip que no tiene ningum artista asignado, en este caso el 70, ya que los artistas tienen el id desde el numero 4000 y nos tendra que salir la excepcion	
+Mostrar el nombre de un cliente dado su id, si no se encuenta mostrar un mensaje	
 ```sql
 do 
 $$
